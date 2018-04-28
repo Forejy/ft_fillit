@@ -28,9 +28,9 @@ clean :
 
 fclean : clean
 	@rm -f $(LIBFT)
-	@rm $(NAME)
+	@rm -f $(NAME)
 	@echo "Libft library deleted."
 	@echo "Fillit executable deleted."
 
-re : fclean all
+re : fclean $(NAME)
 
