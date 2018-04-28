@@ -6,7 +6,7 @@
 /*   By: tdarchiv <tdarchiv@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/04/13 12:58:59 by tdarchiv          #+#    #+#             */
-/*   Updated: 2018/04/19 16:45:03 by jmarques         ###   ########.fr       */
+/*   Updated: 2018/04/28 11:09:35 by jmarques         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,7 +28,7 @@ void	to_norm_or_not(char const *str, int carac_in_piece_line,
 	i = 0;
 	while (str[i] != '\0')
 	{
-		tests_invalid_character(*str);
+		tests_invalid_character(str[i]);
 		if (str[i] == '#')
 			count_cur_hash++;
 		if (str[i] == '\n' && str[i - 1] != '\n')
